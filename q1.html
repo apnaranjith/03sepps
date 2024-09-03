@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        str="abcdefghijklmnopqrstuvwxyz";
+c=0;s="";emp=[];
+for(i=0;i<str.length;i++){
+    if(str.length-s.length>2){
+        if(c<4){
+            s=s+str[i];
+            c++;
+            
+        }
+        else{
+            emp.push(s);
+            c=0;
+            s="";
+            if(c<4){
+                s=s+str[i];
+                c++
+            }
+        }
+        
+    }
+    
+    
+}
+emp.push(s);
+console.log(emp);
+
+    </script>
+</body>
+</html>
